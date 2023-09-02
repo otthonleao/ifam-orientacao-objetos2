@@ -7,10 +7,12 @@ import dev.otthon.ifam.Escola.model.Curso;
 public class CursoInterfaceCadastro {
 	
 	public Curso cadastrarCurso() {
-		Curso curso = new Curso();
+		
+		Curso curso = new Curso(null, null, 0, null);
 		
 		Scanner e = new Scanner(System.in);
 		Scanner eNomeCurso = new Scanner(System.in);
+		
 		System.out.printf("Informe o nome do curso: ");
 		curso.setNome(eNomeCurso.nextLine());
 	

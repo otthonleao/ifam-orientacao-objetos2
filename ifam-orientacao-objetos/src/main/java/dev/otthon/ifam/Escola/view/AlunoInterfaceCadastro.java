@@ -5,8 +5,11 @@ import java.util.Scanner;
 import dev.otthon.ifam.Escola.model.Aluno;
 
 public class AlunoInterfaceCadastro {
+	
 	public Aluno cadastrarAluno() {
+		
 		Aluno aluno = new Aluno();
+		
 		Scanner e = new Scanner(System.in);
 		Scanner eNomeAluno = new Scanner(System.in);
 		

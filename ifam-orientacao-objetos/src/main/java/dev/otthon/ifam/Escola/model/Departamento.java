@@ -1,9 +1,19 @@
 package dev.otthon.ifam.Escola.model;
 
 public class Departamento {
+	
 	private String sigla;
 	private String nome;
 	private Campus campus;
+	
+	public Departamento() {
+	}
+	
+	public Departamento(String sigla, String nome, Campus campus) {
+		this.sigla = sigla;
+		this.nome = nome;
+		this.campus = campus;
+	}
 	
 	public String getSigla() {
 		return sigla;
@@ -11,12 +21,14 @@ public class Departamento {
 	public void setSigla(String sigla) {
 		this.sigla = sigla;
 	}
+	
 	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
 	public Campus getCampus() {
 		return campus;
 	}
