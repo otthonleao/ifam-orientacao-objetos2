@@ -20,8 +20,8 @@ public class CursoController {
 	public void visualizarCurso() {
 		for(Curso curso:cursos) {
 			System.out.printf("Nome: %s\t", curso.getNome());
-			System.out.printf("Sigla %s\t", curso.getSigla());
-			System.out.printf("Duração %d\n", curso.getDuracao());
+			System.out.printf("Sigla: %s\t", curso.getSigla());
+			System.out.printf("Duração: %dh\n", curso.getDuracao());
 		}
 	}
 }

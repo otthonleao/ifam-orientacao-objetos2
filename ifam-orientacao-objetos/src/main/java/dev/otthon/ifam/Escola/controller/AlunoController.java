@@ -19,7 +19,7 @@ public class AlunoController {
 	public void visualizarAluno() {
 		for(Aluno aluno:alunos) {
 			System.out.printf("Matrícula: %s\t", aluno.getMatricula());
-			System.out.printf("Nome: %s\n", aluno.getNome());
+			System.out.printf("Nome: %s\t\n", aluno.getNome());
 		}
 	}
 }

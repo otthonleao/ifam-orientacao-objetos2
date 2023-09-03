@@ -19,6 +19,8 @@ public class AlunoInterfaceCadastro {
 		System.out.printf("Informe o nome do aluno: ");
 		aluno.setNome(eNomeAluno.nextLine());
 		
+		System.out.println("\nALUNO CADASTRADO COM SUCESSO");
+		
 		return aluno;
 	}
 }

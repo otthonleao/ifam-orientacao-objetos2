@@ -53,7 +53,7 @@ public class MenuEscolaInterface {
 				cursoController.cadastrarCurso();
 				break;
 			case 4:
-				System.out.println("\n*****   LISTA DE CURSOS CADASTRADOS   *****");
+				System.out.println("\n**********   LISTA DE CURSOS CADASTRADOS   **********");
 				cursoController.visualizarCurso();
 				break;
 			case 5:
