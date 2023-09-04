@@ -4,3 +4,6 @@
 ### This Repository
 ***
 Repositório das atividades realizadas durante a disciplina Programação Orientada a Objetos da graduação em Análise e Desenvolvimento de Sistemas no Instituto Federal do Amazonas - IFAM, ministrado pelo Professor Me. Antônio Ferreira dos Santos Junior.
+
+## Wiki
+Você pode acompanhar as anotações das aulas e fundamentos conceituais utilizados no aprendizado no _journaling WiKi_ desse repositório: https://github.com/otthonleao/ifam-orientacao-objetos/wiki
