@@ -1,15 +1,28 @@
 package dev.otthon.ifam.Escola.controller;
 
-public class DepartamentoController {
+import java.util.ArrayList;
+import java.util.List;
 
+import dev.otthon.ifam.Escola.model.Departamento;
+import dev.otthon.ifam.Escola.view.DepartamentoInterfaceCadastro;
+
+public class DepartamentoController {
+	
+	List<Departamento> departamentos = new ArrayList<>();
+	
+	DepartamentoInterfaceCadastro dic = new DepartamentoInterfaceCadastro();
+	
 	public void cadastrarDepartamento() {
-		// TODO Auto-generated method stub
-		
+			departamentos.add(dic.cadastrarDepartamento());
+			System.out.printf("\nTotal de Departamentos: %d\n", departamentos.size());
 	}
 
 	public void visualizarDepartamento() {
-		// TODO Auto-generated method stub
-		
+		for(Departamento departamento:departamentos) {
+			System.out.printf("Sigla: %s\t", departamento.getSigla());
+			System.out.printf("Nome: %s\t", departamento.getNome());
+			System.out.printf("Campus: %s\n", departamento.getCampus());
+		}
 	}
 
 }

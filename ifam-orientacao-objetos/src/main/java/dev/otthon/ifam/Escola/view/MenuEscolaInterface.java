@@ -3,7 +3,7 @@ package dev.otthon.ifam.Escola.view;
 import java.util.Scanner;
 
 import dev.otthon.ifam.Escola.controller.AlunoController;
-import dev.otthon.ifam.Escola.controller.CampusController;
+import dev.otthon.ifam.Escola.controller.CampiController;
 import dev.otthon.ifam.Escola.controller.CursoController;
 import dev.otthon.ifam.Escola.controller.DepartamentoController;
 
@@ -18,20 +18,20 @@ public class MenuEscolaInterface {
 		AlunoController alunoController = new AlunoController();
 		CursoController cursoController = new CursoController();
 		DepartamentoController departamentoController = new DepartamentoController();
-		CampusController campusController = new CampusController();
+		CampiController campusController = new CampiController();
 		
 		do {
 			
 			System.out.println("\n================== MENU ====================");
 			
 			System.out.println("[ 1 ] Cadastrar um Aluno");
-			System.out.println("[ 2 ] Listar Aluno");
+			System.out.println("[ 2 ] Listar Aluno\n");
 			System.out.println("[ 3 ] Cadastrar um Curso");
-			System.out.println("[ 4 ] Listar Curso");
+			System.out.println("[ 4 ] Listar Curso\n");
 			System.out.println("[ 5 ] Cadastrar Departamento");
-			System.out.println("[ 6 ] Listar Departamento");
-			System.out.println("[ 7 ] Cadastrar Campus");
-			System.out.println("[ 8 ] Listar Campus");
+			System.out.println("[ 6 ] Listar Departamento\n");
+			System.out.println("[ 7 ] Cadastrar Campi");
+			System.out.println("[ 8 ] Listar Campi\n");
 			System.out.println("[ 9 ] Sair");
 			
 			System.out.println("===========================================");
@@ -65,8 +65,8 @@ public class MenuEscolaInterface {
 				departamentoController.visualizarDepartamento();
 			    break;    
 			case 7:
-				System.out.println("\n+++++++++++   CADASTRAR CAMPUS   +++++++++++");
-				campusController.cadastrarCampus();
+				System.out.println("\n+++++++++++   CADASTRAR CAMPI   +++++++++++");
+				campusController.cadastrarCampi();
 			    break;
 			case 8:
 				System.out.println("\n*****   CAMPUS CADASTRADOS   *****");

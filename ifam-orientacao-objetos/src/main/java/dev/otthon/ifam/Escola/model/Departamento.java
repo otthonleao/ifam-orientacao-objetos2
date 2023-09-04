@@ -4,15 +4,15 @@ public class Departamento {
 	
 	private String sigla;
 	private String nome;
-	private Campus campus;
+	private Campi campi;
 	
 	public Departamento() {
 	}
 	
-	public Departamento(String sigla, String nome, Campus campus) {
+	public Departamento(String sigla, String nome, Campi campi) {
 		this.sigla = sigla;
 		this.nome = nome;
-		this.campus = campus;
+		this.campi = campi;
 	}
 	
 	public String getSigla() {
@@ -29,10 +29,10 @@ public class Departamento {
 		this.nome = nome;
 	}
 	
-	public Campus getCampus() {
-		return campus;
+	public Campi getCampus() {
+		return campi;
 	}
-	public void setCampus(Campus campus) {
-		this.campus = campus;
+	public void setCampus(Campi campi) {
+		this.campi = campi;
 	}
 }

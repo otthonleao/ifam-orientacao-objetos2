@@ -1,15 +1,15 @@
 package dev.otthon.ifam.Escola.model;
 
-public class Campus {
+public class Campi {
 	private String sigla;
 	private String nome;
 	private String cidade;
 	private String bairro;
 	
-	public Campus() {
+	public Campi() {
 	}
 	
-	public Campus(String sigla, String nome, String cidade, String bairro) {
+	public Campi(String sigla, String nome, String cidade, String bairro) {
 		this.sigla = sigla;
 		this.nome = nome;
 		this.cidade = cidade;
