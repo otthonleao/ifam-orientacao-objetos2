@@ -3,22 +3,22 @@ package dev.otthon.ifam.Escola.view;
 import java.util.Scanner;
 
 import dev.otthon.ifam.Escola.controller.AlunoController;
-import dev.otthon.ifam.Escola.controller.CampiController;
+import dev.otthon.ifam.Escola.controller.CampusController;
 import dev.otthon.ifam.Escola.controller.CursoController;
 import dev.otthon.ifam.Escola.controller.DepartamentoController;
 
-public class MenuEscolaInterface {
+public class MenuEscolaAction {
 	
 	public void mostrarMenu() {
 		
-		Scanner opcaoMenu = new Scanner(System.in);	
+		Scanner scanMenu = new Scanner(System.in);	
 		
 		int opcao = 0;
 		
 		AlunoController alunoController = new AlunoController();
 		CursoController cursoController = new CursoController();
 		DepartamentoController departamentoController = new DepartamentoController();
-		CampiController campusController = new CampiController();
+		CampusController campusController = new CampusController();
 		
 		do {
 			
@@ -30,14 +30,14 @@ public class MenuEscolaInterface {
 			System.out.println("[ 4 ] Listar Curso\n");
 			System.out.println("[ 5 ] Cadastrar Departamento");
 			System.out.println("[ 6 ] Listar Departamento\n");
-			System.out.println("[ 7 ] Cadastrar Campi");
-			System.out.println("[ 8 ] Listar Campi\n");
+			System.out.println("[ 7 ] Cadastrar Campus");
+			System.out.println("[ 8 ] Listar Campus\n");
 			System.out.println("[ 9 ] Sair");
 			
-			System.out.println("===========================================");
+			System.out.println("============================================");
 			System.out.println("Escolha uma Opção: ");
 	
-			opcao = opcaoMenu.nextInt();
+			opcao = scanMenu.nextInt();
 			
 			switch (opcao) {
 			case 1: 
@@ -65,7 +65,7 @@ public class MenuEscolaInterface {
 				departamentoController.visualizarDepartamento();
 			    break;    
 			case 7:
-				System.out.println("\n+++++++++++   CADASTRAR CAMPI   +++++++++++");
+				System.out.println("\n+++++++++++   CADASTRAR CAMPUS   +++++++++++");
 				campusController.cadastrarCampi();
 			    break;
 			case 8:
@@ -80,5 +80,7 @@ public class MenuEscolaInterface {
             	break;
 			}
 		} while(opcao !=9);
+		
+		scanMenu.close();
 	}
 }

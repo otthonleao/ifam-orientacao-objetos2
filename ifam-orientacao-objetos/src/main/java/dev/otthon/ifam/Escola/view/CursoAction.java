@@ -4,23 +4,25 @@ import java.util.Scanner;
 
 import dev.otthon.ifam.Escola.model.Curso;
 
-public class CursoInterfaceCadastro {
+public class CursoAction {
 	
 	public Curso cadastrarCurso() {
 		
-		Curso curso = new Curso(null, null, 0, null);
+		Curso curso = new Curso();
 		
-		Scanner e = new Scanner(System.in);
-		Scanner eNomeCurso = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
+//		Scanner eNomeCurso = new Scanner(System.in);
 		
 		System.out.printf("Informe o nome do curso: ");
-		curso.setNome(eNomeCurso.nextLine());
+		curso.setNome(scan.nextLine());
 	
 		System.out.printf("Informe a sigla do curso: ");
-		curso.setSigla(e.next());
+		curso.setSigla(scan.nextLine());
 
 		System.out.printf("Informe a duração do curso: ");
-		curso.setDuracao(e.nextInt());
+		curso.setDuracao(scan.nextInt());
+		
+		System.out.println("\nCURSO CADASTRADO COM SUCESSO!");
 		
 		return curso;
 	}

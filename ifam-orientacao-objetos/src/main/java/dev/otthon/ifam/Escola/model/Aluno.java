@@ -9,10 +9,9 @@ public class Aluno {
 	public Aluno() {
 	}
 	
-	public Aluno(String matricula, String nome, Curso curso) {
+	public Aluno(String matricula, String nome) {
 		this.matricula = matricula;
 		this.nome = nome;
-		this.curso = curso;
 	}
 	
 	public String getMatricula() {

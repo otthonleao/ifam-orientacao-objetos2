@@ -1,11 +1,11 @@
 package dev.otthon.ifam.Escola;
 
-import dev.otthon.ifam.Escola.view.MenuEscolaInterface;
+import dev.otthon.ifam.Escola.view.MenuEscolaAction;
 
 public class Escola {
 
 	public static void main(String[] args) {
-		MenuEscolaInterface menu = new MenuEscolaInterface();
+		MenuEscolaAction menu = new MenuEscolaAction();
 		menu.mostrarMenu();
 	}
 

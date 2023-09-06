@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dev.otthon.ifam.Escola.model.Aluno;
-import dev.otthon.ifam.Escola.view.AlunoInterfaceCadastro;
+import dev.otthon.ifam.Escola.view.AlunoAction;
 
 public class AlunoController {
 	
 	List<Aluno> alunos = new ArrayList<>();
 	
 	public void cadastrarAluno() {
-		AlunoInterfaceCadastro aic = new AlunoInterfaceCadastro();
-		alunos.add(aic.cadastrarAluno());
+		AlunoAction alunoInterface = new AlunoAction();
+		alunos.add(alunoInterface.cadastrarAluno());
 		System.out.printf("Total de alunos: %d\n", alunos.size());
 	}
 	

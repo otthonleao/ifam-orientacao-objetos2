@@ -10,11 +10,10 @@ public class Curso {
 	public Curso() {
 	}
 	
-	public Curso(String nome, String sigla, int duracao, Departamento departamento) {
+	public Curso(String nome, String sigla, int duracao) {
 		this.nome = nome;
 		this.sigla = sigla;
 		this.duracao = duracao;
-		this.departamento = departamento;
 	}
 	
 	public String getNome() {
